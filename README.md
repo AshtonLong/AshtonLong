@@ -12,7 +12,7 @@
 
 <!-- ===================== HERO / TYPING BANNER ===================== -->
 <a href="https://github.com/AshtonLong">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=3200&pause=900&color=58A6FF&center=true&vCenter=true&width=720&height=80&lines=Hi%2C+I'm+Ashton+%F0%9F%91%8B;Computer+Science+%40+University+of+Guelph;Aspiring+Software+Developer;Open+to+Software+Dev+Co-op+%26+Internship+roles" alt="Typing banner" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=3200&pause=900&color=58A6FF&center=true&vCenter=true&width=760&height=80&lines=Hi%2C+I'm+Ashton+%F0%9F%91%8B;4th-Year+CS+Co-op+%40+University+of+Guelph;Full-Stack+%26+AI+Developer;Always+open+for+Software+Dev+Co-op+roles" alt="Typing banner" />
 </a>
 
 <br/>
@@ -35,14 +35,26 @@
 
 ```yaml
 Ashton Long:
-  role:         "Computer Science Student & Software Developer"
-  education:    "B.Comp.Sci @ University of Guelph 🇨🇦"
-  currently:    "Open to Software Developer Co-op / Internship roles"
-  building:     [ "AI side-projects", "Web apps", "Flutter apps" ]
-  learning:     [ "System Design", "Cloud / DevOps", "Data Structures & Algorithms" ]
-  ask_me_about: [ "TypeScript", "Flutter / Dart", "Turning ideas into shipped apps" ]
-  fun_fact:     "I built AnkiGPT — an AI-powered flashcard generator 🤖"
+  role:         "Full-Stack & AI Developer | CS Co-op Student"
+  education:    "4th-Year B.Comp.Sci (Co-op, 5-yr) @ University of Guelph 🇨🇦"
+  status:       "Always open to Software Developer Co-op / Internship roles ✅"
+  focus:        [ "Full-Stack Web (React / TypeScript / Node)", "AI / ML side-projects" ]
+  learning:     [ "System Design", "LLMs & applied AI", "Cloud / DevOps" ]
+  ask_me_about: [ "Shipping full-stack apps", "Building with the OpenAI API", "TypeScript" ]
+  fun_fact:     "Lifelong learner & gym regular — I bring the same discipline to code as I do to training 💪"
+  proud_of:     "AnkiGPT — an AI-powered flashcard generator 🤖"
 ```
+
+<br/>
+
+<!-- ===================== FOCUS ===================== -->
+## 🎯 What I'm Focused On
+
+> **🌐 Full-Stack Web** — building responsive, end-to-end apps with React, TypeScript & Node, from UI to API to deploy.
+>
+> **🤖 Applied AI / ML** — wiring LLMs into real tools that solve real problems (see [AnkiGPT](https://github.com/AshtonLong/AnkiGPT)).
+>
+> **💪 Co-op ready** — 4th year of a 5-year co-op program, always open to new opportunities and quick to ramp on a team's stack.
 
 <br/>
 
@@ -63,6 +75,7 @@ Ashton Long:
 #### Frameworks & Tools
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI%20API-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
@@ -166,7 +179,7 @@ Ashton Long:
 
 <br/><br/>
 
-<i>💡 Currently seeking a Software Developer Co-op / Internship — let's build something great together.</i>
+<i>💡 Always open to Software Developer Co-op / Internship roles — let's build something great together.</i>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:58A6FF&height=120&section=footer" width="100%" alt="footer" />
 
