@@ -1,9 +1,9 @@
 <!--
   ┌─────────────────────────────────────────────────────────────────┐
-  │  Hey Ashton — a few things to personalize (search for "EDIT"):    │
+  │  Hey Ashton - a few things to personalize (search for "EDIT"):    │
   │   • LinkedIn URL  → replace YOUR-LINKEDIN below                    │
   │   • Portfolio     → uncomment the Portfolio badge if you want it   │
-  │   • The "whoami" block + tech stack — tweak to match reality       │
+  │   • The "whoami" block + tech stack - tweak to match reality       │
   │  Everything else (stats, streak, trophies, snake) is automatic.   │
   └─────────────────────────────────────────────────────────────────┘
 -->
@@ -41,8 +41,8 @@ Ashton Long:
   focus:        [ "Full-Stack Web (React / TypeScript / Node)", "AI / ML side-projects" ]
   learning:     [ "System Design", "LLMs & applied AI", "Cloud / DevOps" ]
   ask_me_about: [ "Shipping full-stack apps", "Building with the OpenAI API", "TypeScript" ]
-  fun_fact:     "Lifelong learner & gym regular — I bring the same discipline to code as I do to training 💪"
-  proud_of:     "AnkiGPT — an AI-powered flashcard generator 🤖"
+  fun_fact:     "Lifelong learner & gym regular - I bring the same discipline to code as I do to training 💪"
+  proud_of:     "AnkiGPT - an AI-powered flashcard generator 🤖"
 ```
 
 <br/>
@@ -50,11 +50,11 @@ Ashton Long:
 <!-- ===================== FOCUS ===================== -->
 ## 🎯 What I'm Focused On
 
-> **🌐 Full-Stack Web** — building responsive, end-to-end apps with React, TypeScript & Node, from UI to API to deploy.
+> **🌐 Full-Stack Web** - building responsive, end-to-end apps with React, TypeScript & Node, from UI to API to deploy.
 >
-> **🤖 Applied AI / ML** — wiring LLMs into real tools that solve real problems (see [AnkiGPT](https://github.com/AshtonLong/AnkiGPT)).
+> **🤖 Applied AI / ML** - wiring LLMs into real tools that solve real problems (see [AnkiGPT](https://github.com/AshtonLong/AnkiGPT)).
 >
-> **💪 Co-op ready** — 4th year of a 5-year co-op program, always open to new opportunities and quick to ramp on a team's stack.
+> **💪 Co-op ready** - 4th year of a 5-year co-op program, always open to new opportunities and quick to ramp on a team's stack.
 
 <br/>
 
@@ -97,7 +97,7 @@ Ashton Long:
 <td width="50%" valign="top">
 
 ### 🤖 [AnkiGPT](https://github.com/AshtonLong/AnkiGPT)
-AI-powered flashcard generator — turns notes into ready-to-study Anki decks using the OpenAI API.
+AI-powered flashcard generator - turns notes into ready-to-study Anki decks using the OpenAI API.
 
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
@@ -106,7 +106,7 @@ AI-powered flashcard generator — turns notes into ready-to-study Anki decks us
 <td width="50%" valign="top">
 
 ### 🎮 [megagamerland](https://github.com/AshtonLong/megagamerland)
-A TypeScript web project — interactive, type-safe front-end built from the ground up.
+A TypeScript web project - interactive, type-safe front-end built from the ground up.
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
@@ -116,7 +116,7 @@ A TypeScript web project — interactive, type-safe front-end built from the gro
 <td width="50%" valign="top">
 
 ### ⚙️ [flutter-ci-demo](https://github.com/AshtonLong/flutter-ci-demo)
-Cross-platform Flutter app wired up with a CI/CD pipeline — automated builds & testing.
+Cross-platform Flutter app wired up with a CI/CD pipeline - automated builds & testing.
 
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white)
@@ -125,7 +125,7 @@ Cross-platform Flutter app wired up with a CI/CD pipeline — automated builds &
 <td width="50%" valign="top">
 
 ### 🌐 [coopsite](https://github.com/AshtonLong/coopsite)
-Personal co-op landing site — clean, responsive front-end to showcase my work to employers.
+Personal co-op landing site - clean, responsive front-end to showcase my work to employers.
 
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
@@ -139,7 +139,7 @@ Personal co-op landing site — clean, responsive front-end to showcase my work 
 <br/>
 
 <!-- ===================== ACTIVITY ===================== -->
-<!-- NOTE: the github-readme-stats / streak / trophy cards were removed on purpose —
+<!-- NOTE: the github-readme-stats / streak / trophy cards were removed on purpose -
      their free public instances are frequently rate-limited (503/402) and show as
      broken images, which looks bad to recruiters. The widgets below use services
      that render reliably. To add the stats cards back bulletproof, self-host
@@ -185,7 +185,7 @@ Personal co-op landing site — clean, responsive front-end to showcase my work 
 
 <br/><br/>
 
-<i>💡 Always open to Software Developer Co-op / Internship roles — let's build something great together.</i>
+<i>💡 Always open to Software Developer Co-op / Internship roles - let's build something great together.</i>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:58A6FF&height=120&section=footer" width="100%" alt="footer" />
 
