@@ -63,7 +63,7 @@ def hero():
         ("out", "Software Developer (contract) @ ScanAir"),
         ("out", "FastAPI + React/TS + Mapbox GL + Python geometry"),
         ("cmd", "ls ~/projects"),
-        ("out", "AnkiGPT/   AI-Tutor-Bot/   VCard-Manager/"),
+        ("out", "AnkiGPT/   ScanAir/   fruitfly-brain-mod/"),
         ("cmd", "echo $STATUS"),
         ("out", "open to software developer co-op roles"),
     ]
@@ -279,43 +279,6 @@ def icon_route(c):
     </g>""" % {"c": c, "p": path, "panel": PANEL}
 
 
-def icon_bot(c):
-    blink = '<animate attributeName="ry" values="2.6;2.6;.3;2.6;2.6" keyTimes="0;.44;.47;.5;1" dur="4.5s" repeatCount="indefinite"/>'
-    return """<g fill="none" stroke="%(c)s" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M24 6v6"/><circle cx="24" cy="5" r="2" fill="%(c)s"/>
-      <rect x="9" y="12" width="30" height="24" rx="7"/>
-      <ellipse cx="18" cy="23" rx="2.6" ry="2.6" fill="%(c)s" stroke="none">%(b)s</ellipse>
-      <ellipse cx="30" cy="23" rx="2.6" ry="2.6" fill="%(c)s" stroke="none">%(b)s</ellipse>
-      <path d="M18 30h12" opacity=".8"/>
-      <path d="M4 20v8M44 20v8" opacity=".6"/>
-    </g>""" % {"c": c, "b": blink}
-
-
-def icon_vcard(c):
-    return """<g fill="none" stroke="%s" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="5" y="10" width="38" height="28" rx="4"/>
-      <circle cx="16" cy="21" r="4"/>
-      <path d="M10 32c1-4 3.5-6 6-6s5 2 6 6" opacity=".8"/>
-      <path d="M26 19h12M26 25h12M26 31h8" opacity=".8"/>
-    </g>""" % c
-
-
-def icon_bars(c):
-    uns = [14, 26, 8, 30, 18, 22]
-    srt = sorted(uns)
-    g = []
-    for k in range(6):
-        x = 6 + k * 6.4
-        hv = "%d;%d;%d;%d" % (uns[k], srt[k], srt[k], uns[k])
-        yv = "%d;%d;%d;%d" % (40 - uns[k], 40 - srt[k], 40 - srt[k], 40 - uns[k])
-        g.append(
-            '<rect x="%s" y="%d" width="4.4" height="%d" rx="1.2" fill="%s" opacity="%.2f">' % (fmt(x), 40 - uns[k], uns[k], c, 0.55 + k * 0.08)
-            + '<animate attributeName="height" values="%s" keyTimes="0;.4;.65;1" dur="5s" repeatCount="indefinite"/>' % hv
-            + '<animate attributeName="y" values="%s" keyTimes="0;.4;.65;1" dur="5s" repeatCount="indefinite"/></rect>' % yv
-        )
-    return '<g>%s<path d="M4 41h40" stroke="%s" stroke-opacity=".5" stroke-width="1.5" stroke-linecap="round"/></g>' % ("".join(g), c)
-
-
 def icon_doc(c):
     return """<g fill="none" stroke="%s" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M12 5h16l9 9v27a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>
@@ -434,47 +397,6 @@ def cards():
         icon_route(GREEN),
         GREEN,
         "scanair.ca",
-    )
-    card(
-        "tutor-bot",
-        "AI Tutor Bot",
-        "personal project  ·  2024",
-        [
-            "Discord bot that answers homework questions on demand.",
-            "Routes simple questions to cheaper models to keep the API bill down.",
-        ],
-        ["Python", "Discord", "OpenAI", "Anthropic"],
-        icon_bot(PURPLE),
-        PURPLE,
-        "private repo",
-        cta_kind="lock",
-    )
-    card(
-        "vcard",
-        "VCard Manager",
-        "course project  ·  2025",
-        [
-            "Contact manager with a Python frontend over a C backend.",
-            "The parser ships as a dynamically linked C library.",
-        ],
-        ["C", "Python", "SQL"],
-        icon_vcard(ORANGE),
-        ORANGE,
-        "coursework, private",
-        cta_kind="lock",
-    )
-    card(
-        "sorting",
-        "Sorting Algorithm Visualizer",
-        "personal project  ·  2023",
-        [
-            "Bubble, selection, insertion and quick sort, drawn bar by bar",
-            "in the browser. Adjustable array size and a dark mode.",
-        ],
-        ["JavaScript", "HTML", "CSS"],
-        icon_bars(YELLOW),
-        YELLOW,
-        "view repo",
     )
     card(
         "fruitfly-brain-mod",

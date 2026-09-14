@@ -30,7 +30,7 @@
 
 I'm a fourth-year Computer Science co-op student at the University of Guelph. Since May I've been a contract developer at ScanAir, building a drone mission planner: a FastAPI backend, a React and TypeScript frontend on Mapbox GL, and a Python geometry engine that turns a scan area into DJI-compatible waypoint missions. Before that I did a co-op term at Ontario's Ministry of Public and Business Service Delivery and Procurement, where I built a semantic search tool over past incidents so the team could find how something was fixed the last time it broke.
 
-My side projects mostly involve LLMs. AnkiGPT turns a PDF or pasted notes into an Anki deck and validates every card before you see it. An earlier Discord tutoring bot routed easy questions to cheaper models to keep the bill down. I write a lot of my personal code with Claude Code or Codex in the loop.
+AnkiGPT turns a PDF or pasted notes into an Anki deck and validates every card before you see it. I write a lot of my personal code with Claude Code or Codex in the loop.
 
 I'm looking for a software developer co-op role for my next work term. When I'm not at a keyboard I'm usually at the gym.
 
@@ -38,7 +38,7 @@ I'm looking for a software developer co-op role for my next work term. When I'm 
 
 ## What I work with
 
-Python and TypeScript are what I reach for first. The C comes from course projects like the VCard manager below.
+Python and TypeScript are what I reach for first.
 
 <div align="center">
 
@@ -63,11 +63,6 @@ Python and TypeScript are what I reach for first. The C comes from course projec
   <a href="https://scanair.ca"><img src="assets/cards/scanair.svg" width="49%" alt="ScanAir: drone mission planner that turns a scan area into DJI-ready waypoint missions. FastAPI, React, TypeScript, Mapbox GL." /></a>
 </p>
 <p align="center">
-  <img src="assets/cards/tutor-bot.svg" width="49%" alt="AI Tutor Bot: Discord bot that answers homework questions and routes simple ones to cheaper models. Python, OpenAI API, Anthropic API." />
-  <img src="assets/cards/vcard.svg" width="49%" alt="VCard Manager: contact manager with a Python frontend over a dynamically linked C library. C, Python, SQL." />
-</p>
-<p align="center">
-  <a href="https://github.com/AshtonLong/Sorting-Algorithm-Visualizer"><img src="assets/cards/sorting.svg" width="49%" alt="Sorting Algorithm Visualizer: bubble, selection, insertion and quick sort drawn bar by bar in the browser. JavaScript." /></a>
   <a href="https://github.com/AshtonLong/fruitfly-brain-mod"><img src="assets/cards/fruitfly-brain-mod.svg" width="49%" alt="Fruit Fly: A Small Mind. Minecraft Fabric mod with a spiking neural simulation using real FlyWire connectivity and a live brain visualizer. Java, Fabric, Python." /></a>
 </p>
 
