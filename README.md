@@ -30,7 +30,7 @@
 
 I'm a fourth-year Computer Science co-op student at the University of Guelph. Since May I've been a contract developer at ScanAir, building a drone mission planner: a FastAPI backend, a React and TypeScript frontend on Mapbox GL, and a Python geometry engine that turns a scan area into DJI-compatible waypoint missions. Before that I did a co-op term at Ontario's Ministry of Public and Business Service Delivery and Procurement, where I built a semantic search tool over past incidents so the team could find how something was fixed the last time it broke.
 
-AnkiGPT turns a PDF or pasted notes into an Anki deck and validates every card before you see it. I write a lot of my personal code with Claude Code or Codex in the loop.
+AnkiGPT uses an agent pipeline to turn notes and PDFs into editable Anki decks. It checks cards against the source, merges near-duplicates, audits coverage, and can rewrite struggling cards using imported Anki review history. I write a lot of my personal code with Claude Code or Codex in the loop.
 
 I'm looking for a software developer co-op role for my next work term. When I'm not at a keyboard I'm usually at the gym.
 
@@ -59,7 +59,7 @@ Python and TypeScript are what I reach for first.
 ## Projects
 
 <p align="center">
-  <a href="https://github.com/AshtonLong/AnkiGPT"><img src="assets/cards/ankigpt.svg" width="49%" alt="AnkiGPT: paste notes or upload a PDF and get an Anki deck back. Python, Flask, OpenRouter." /></a>
+  <a href="https://github.com/AshtonLong/AnkiGPT"><img src="assets/cards/ankigpt.svg" width="49%" alt="AnkiGPT: agents turn notes and PDFs into editable Anki decks with source checks, semantic deduplication and coverage audits. Python, Flask, OpenRouter, NumPy, SQLite." /></a>
   <a href="https://scanair.ca"><img src="assets/cards/scanair.svg" width="49%" alt="ScanAir: drone mission planner that turns a scan area into DJI-ready waypoint missions. FastAPI, React, TypeScript, Mapbox GL." /></a>
 </p>
 <p align="center">
