@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="210" viewBox="0 0 560 210" role="img" aria-labelledby="t">
+<title id="t">VCard Manager. Contact manager with a Python frontend over a C backend. The parser ships as a dynamically linked C library.</title>
+<style>
+  .sans{font-family:'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif}
+  .mono{font-family:Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace;font-size:12px}
+</style>
+<defs>
+  <clipPath id="c"><rect width="560" height="210" rx="18"/></clipPath>
+  <radialGradient id="glow" cx="1" cy="0" r="1">
+    <stop offset="0" stop-color="#f78166" stop-opacity=".28"/><stop offset=".6" stop-color="#f78166" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="topline" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#f78166" stop-opacity="0"/><stop offset=".5" stop-color="#f78166" stop-opacity=".9"/><stop offset="1" stop-color="#f78166" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<g clip-path="url(#c)">
+  <rect width="560" height="210" rx="18" fill="#161b22"/>
+  <rect width="560" height="210" fill="url(#glow)"/>
+  <rect x="120" y="0" width="320" height="1.5" fill="url(#topline)"/>
+</g>
+<rect x=".75" y=".75" width="558.5" height="208.5" rx="18" fill="none" stroke="#30363d"/>
+<rect x=".75" y=".75" width="558.5" height="208.5" rx="18" fill="none" stroke="#f78166" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="190 1319.1" opacity=".9">
+  <animate attributeName="stroke-dashoffset" from="0" to="-1509.1" dur="7s" repeatCount="indefinite"/>
+</rect>
+<rect x="28" y="28" width="48" height="48" rx="12" fill="#f78166" fill-opacity=".12" stroke="#f78166" stroke-opacity=".35"/>
+<g transform="translate(28 28)"><g fill="none" stroke="#f78166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="5" y="10" width="38" height="28" rx="4"/>
+      <circle cx="16" cy="21" r="4"/>
+      <path d="M10 32c1-4 3.5-6 6-6s5 2 6 6" opacity=".8"/>
+      <path d="M26 19h12M26 25h12M26 31h8" opacity=".8"/>
+    </g></g>
+<text x="92" y="50" class="sans" font-size="22" font-weight="700" fill="#e6edf3">VCard Manager</text>
+<text x="92" y="72" class="mono" fill="#8b949e">course project  ·  2025</text>
+<text x="28" y="112" class="sans" font-size="15.5" fill="#c9d1d9">Contact manager with a Python frontend over a C backend.</text><text x="28" y="135" class="sans" font-size="15.5" fill="#c9d1d9">The parser ships as a dynamically linked C library.</text>
+<rect x="28" y="166" width="27.2" height="24" rx="12" fill="#21262d" stroke="#30363d"/><text x="38" y="182" class="mono" fill="#c9d1d9" textLength="7.2">C</text><rect x="63.2" y="166" width="63.2" height="24" rx="12" fill="#21262d" stroke="#30363d"/><text x="73.2" y="182" class="mono" fill="#c9d1d9" textLength="43.2">Python</text><rect x="134.4" y="166" width="41.6" height="24" rx="12" fill="#21262d" stroke="#30363d"/><text x="144.4" y="182" class="mono" fill="#c9d1d9" textLength="21.6">SQL</text>
+<g transform="translate(532 182)" text-anchor="end"><text x="-16" y="0" class="mono" font-size="12" fill="#8b949e">coursework, private</text><path transform="translate(-11 -11)" d="M2.5 5.5V4a3.5 3.5 0 0 1 7 0v1.5M2 5.5h8a1 1 0 0 1 1 1V10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6.5a1 1 0 0 1 1-1z" fill="none" stroke="#8b949e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>
