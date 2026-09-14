@@ -377,10 +377,10 @@ def cards():
         "AnkiGPT",
         "personal project  ·  2025 to now",
         [
-            "Paste notes or upload a PDF and get an Anki deck back.",
-            "Writes a cheat sheet first, then generates, validates and exports cards.",
+            "Agents turn notes and PDFs into editable Anki decks.",
+            "Source checks, semantic deduplication and coverage audits.",
         ],
-        ["Python", "Flask", "OpenRouter", "Pydantic", "Celery"],
+        ["Python", "Flask", "OpenRouter", "NumPy", "SQLite"],
         icon_cards(BLUE),
         BLUE,
         "view repo",
