@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="210" viewBox="0 0 560 210" role="img" aria-labelledby="t">
+<title id="t">ScanAir. Drone mission planner. Turns a scan area into DJI-ready waypoint missions for 3D Gaussian Splatting capture, with terrain checks.</title>
+<style>
+  .sans{font-family:'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif}
+  .mono{font-family:Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace;font-size:12px}
+</style>
+<defs>
+  <clipPath id="c"><rect width="560" height="210" rx="18"/></clipPath>
+  <radialGradient id="glow" cx="1" cy="0" r="1">
+    <stop offset="0" stop-color="#3fb950" stop-opacity=".28"/><stop offset=".6" stop-color="#3fb950" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="topline" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#3fb950" stop-opacity="0"/><stop offset=".5" stop-color="#3fb950" stop-opacity=".9"/><stop offset="1" stop-color="#3fb950" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<g clip-path="url(#c)">
+  <rect width="560" height="210" rx="18" fill="#161b22"/>
+  <rect width="560" height="210" fill="url(#glow)"/>
+  <rect x="120" y="0" width="320" height="1.5" fill="url(#topline)"/>
+</g>
+<rect x=".75" y=".75" width="558.5" height="208.5" rx="18" fill="none" stroke="#30363d"/>
+<rect x=".75" y=".75" width="558.5" height="208.5" rx="18" fill="none" stroke="#3fb950" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="190 1319.1" opacity=".9">
+  <animate attributeName="stroke-dashoffset" from="0" to="-1509.1" dur="7s" repeatCount="indefinite"/>
+</rect>
+<rect x="28" y="28" width="48" height="48" rx="12" fill="#3fb950" fill-opacity=".12" stroke="#3fb950" stroke-opacity=".35"/>
+<g transform="translate(28 28)"><g fill="none" stroke="#3fb950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 34 L15 12 L23 30 L32 10 L42 30" stroke-dasharray="4 4" opacity=".6"/>
+      <circle cx="6" cy="34" r="3" fill="#161b22"/><circle cx="15" cy="12" r="3" fill="#161b22"/>
+      <circle cx="23" cy="30" r="3" fill="#161b22"/><circle cx="32" cy="10" r="3" fill="#161b22"/><circle cx="42" cy="30" r="3" fill="#161b22"/>
+      <circle r="3.5" fill="#3fb950" stroke="none"><animateMotion dur="3.2s" repeatCount="indefinite" path="M6 34 L15 12 L23 30 L32 10 L42 30"/></circle>
+    </g></g>
+<text x="92" y="50" class="sans" font-size="22" font-weight="700" fill="#e6edf3">ScanAir</text>
+<text x="92" y="72" class="mono" fill="#8b949e">contract work  ·  2026</text>
+<text x="28" y="112" class="sans" font-size="15.5" fill="#c9d1d9">Drone mission planner. Turns a scan area into DJI-ready waypoint</text><text x="28" y="135" class="sans" font-size="15.5" fill="#c9d1d9">missions for 3D Gaussian Splatting capture, with terrain checks.</text>
+<rect x="28" y="166" width="70.4" height="24" rx="12" fill="#21262d" stroke="#30363d"/><text x="38" y="182" class="mono" fill="#c9d1d9" textLength="50.4">FastAPI</text><rect x="106.4" y="166" width="56" height="24" rx="12" fill="#21262d" stroke="#30363d"/><text x="116.4" y="182" class="mono" fill="#c9d1d9" textLength="36">React</text><rect x="170.4" y="166" width="92" height="24" rx="12" fill="#21262d" stroke="#30363d"/><text x="180.4" y="182" class="mono" fill="#c9d1d9" textLength="72">TypeScript</text><rect x="270.4" y="166" width="84.8" height="24" rx="12" fill="#21262d" stroke="#30363d"/><text x="280.4" y="182" class="mono" fill="#c9d1d9" textLength="64.8">Mapbox GL</text>
+<g transform="translate(532 182)" text-anchor="end"><text x="-16" y="0" class="mono" font-size="12" fill="#3fb950">scanair.ca</text><path transform="translate(-10 -10)" d="M1 9L9 1M3 1h6v6" fill="none" stroke="#3fb950" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

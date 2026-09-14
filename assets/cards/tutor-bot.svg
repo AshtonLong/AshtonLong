@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="210" viewBox="0 0 560 210" role="img" aria-labelledby="t">
+<title id="t">AI Tutor Bot. Discord bot that answers homework questions on demand. Routes simple questions to cheaper models to keep the API bill down.</title>
+<style>
+  .sans{font-family:'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif}
+  .mono{font-family:Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace;font-size:12px}
+</style>
+<defs>
+  <clipPath id="c"><rect width="560" height="210" rx="18"/></clipPath>
+  <radialGradient id="glow" cx="1" cy="0" r="1">
+    <stop offset="0" stop-color="#bc8cff" stop-opacity=".28"/><stop offset=".6" stop-color="#bc8cff" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="topline" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#bc8cff" stop-opacity="0"/><stop offset=".5" stop-color="#bc8cff" stop-opacity=".9"/><stop offset="1" stop-color="#bc8cff" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<g clip-path="url(#c)">
+  <rect width="560" height="210" rx="18" fill="#161b22"/>
+  <rect width="560" height="210" fill="url(#glow)"/>
+  <rect x="120" y="0" width="320" height="1.5" fill="url(#topline)"/>
+</g>
+<rect x=".75" y=".75" width="558.5" height="208.5" rx="18" fill="none" stroke="#30363d"/>
+<rect x=".75" y=".75" width="558.5" height="208.5" rx="18" fill="none" stroke="#bc8cff" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="190 1319.1" opacity=".9">
+  <animate attributeName="stroke-dashoffset" from="0" to="-1509.1" dur="7s" repeatCount="indefinite"/>
+</rect>
+<rect x="28" y="28" width="48" height="48" rx="12" fill="#bc8cff" fill-opacity=".12" stroke="#bc8cff" stroke-opacity=".35"/>
+<g transform="translate(28 28)"><g fill="none" stroke="#bc8cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M24 6v6"/><circle cx="24" cy="5" r="2" fill="#bc8cff"/>
+      <rect x="9" y="12" width="30" height="24" rx="7"/>
+      <ellipse cx="18" cy="23" rx="2.6" ry="2.6" fill="#bc8cff" stroke="none"><animate attributeName="ry" values="2.6;2.6;.3;2.6;2.6" keyTimes="0;.44;.47;.5;1" dur="4.5s" repeatCount="indefinite"/></ellipse>
+      <ellipse cx="30" cy="23" rx="2.6" ry="2.6" fill="#bc8cff" stroke="none"><animate attributeName="ry" values="2.6;2.6;.3;2.6;2.6" keyTimes="0;.44;.47;.5;1" dur="4.5s" repeatCount="indefinite"/></ellipse>
+      <path d="M18 30h12" opacity=".8"/>
+      <path d="M4 20v8M44 20v8" opacity=".6"/>
+    </g></g>
+<text x="92" y="50" class="sans" font-size="22" font-weight="700" fill="#e6edf3">AI Tutor Bot</text>
+<text x="92" y="72" class="mono" fill="#8b949e">personal project  ·  2024</text>
+<text x="28" y="112" class="sans" font-size="15.5" fill="#c9d1d9">Discord bot that answers homework questions on demand.</text><text x="28" y="135" class="sans" font-size="15.5" fill="#c9d1d9">Routes simple questions to cheaper models to keep the API bill down.</text>
+<rect x="28" y="166" width="63.2" height="24" rx="12" fill="#21262d" stroke="#30363d"/><text x="38" y="182" class="mono" fill="#c9d1d9" textLength="43.2">Python</text><rect x="99.2" y="166" width="70.4" height="24" rx="12" fill="#21262d" stroke="#30363d"/><text x="109.2" y="182" class="mono" fill="#c9d1d9" textLength="50.4">Discord</text><rect x="177.6" y="166" width="63.2" height="24" rx="12" fill="#21262d" stroke="#30363d"/><text x="187.6" y="182" class="mono" fill="#c9d1d9" textLength="43.2">OpenAI</text><rect x="248.8" y="166" width="84.8" height="24" rx="12" fill="#21262d" stroke="#30363d"/><text x="258.8" y="182" class="mono" fill="#c9d1d9" textLength="64.8">Anthropic</text>
+<g transform="translate(532 182)" text-anchor="end"><text x="-16" y="0" class="mono" font-size="12" fill="#8b949e">private repo</text><path transform="translate(-11 -11)" d="M2.5 5.5V4a3.5 3.5 0 0 1 7 0v1.5M2 5.5h8a1 1 0 0 1 1 1V10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6.5a1 1 0 0 1 1-1z" fill="none" stroke="#8b949e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>
