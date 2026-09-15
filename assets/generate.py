@@ -4,7 +4,8 @@ No external fonts, scripts or animation. Pixel lettering uses vector squares.
 """
 from html import escape
 from pathlib import Path
-import random
+import base64
+import resvg_py
 import xml.etree.ElementTree as ET
 
 HERE = Path(__file__).resolve().parent
@@ -66,36 +67,29 @@ def write(name, svg):
 
 
 def hero(mobile=False):
-    w, h = (480, 410) if mobile else (960, 440)
+    w, h = (480, 366) if mobile else (960, 420)
     x = 28 if mobile else 40
     s = pixels('A', x, 22, 3, MINT)
     s += text(x + 28, 38, 'ASHTON LONG / GITHUB', 11, BODY, extra='letter-spacing="2"')
     s += rule(x, 62, w - x, 62)
-    s += rect(x, 91, 6, 6, MINT) + text(x + 17, 98, 'Open to software developer co-op roles', 12, BODY)
-    s += pixels('ASHTON', x, 128, 11 if mobile else 12)
-    s += pixels('LONG', x, 225 if mobile else 231, 11 if mobile else 12, MINT)
-    s += text(x, 334 if mobile else 348, 'Full-stack & AI developer.', 24 if mobile else 28, FG, False, 'font-weight="600" letter-spacing="-0.7"')
-    s += text(x, 362 if mobile else 378, '4th-year Computer Science co-op', 13, BODY)
-    s += text(x, 384 if mobile else 400, 'University of Guelph · Ontario, Canada', 13, MUTED)
+    s += pixels('ASHTON', x, 101 if mobile else 112, 11 if mobile else 12)
+    s += pixels('LONG', x, 198 if mobile else 218, 11 if mobile else 12, MINT)
+    s += text(x, 311 if mobile else 342, '4th-year Computer Science co-op', 13, BODY)
+    s += text(x, 335 if mobile else 366, 'University of Guelph · Ontario, Canada', 13, MUTED)
     if not mobile:
-        s += rect(576, 94, 344, 218, '#050906', f'stroke="{LINE}"')
-        rng = random.Random(7)
-        for row in range(5):
-            for col in range(13):
-                if rng.random() > .64:
-                    s += rect(600 + col * 24, 113 + row * 24, 10, 10, MINT,
-                              f'opacity="{rng.choice([.10, .18, .28, .45])}"')
-        s += text(600, 265, 'CS × REAL-WORLD SOFTWARE', 12, MINT, extra='letter-spacing="1"')
-        s += text(600, 289, 'GEOMETRY / AGENTS / NEURAL SYSTEMS', 11, MUTED)
-        for cx in [573, 917]:
-            for cy in [91, 309]:
-                s += rect(cx, cy, 6, 6, MINT)
-        s += text(576, 348, 'CURRENTLY', 11, MUTED, extra='letter-spacing="2"')
-        s += text(576, 376, 'Software Developer · ScanAir', 18, BODY, False)
-        s += text(576, 400, 'FastAPI / React / TypeScript / Mapbox GL', 12, MUTED)
+        # Embed the Blender render in the source SVG; publish a high-resolution
+        # PNG so GitHub does not need to resolve an image nested inside an SVG.
+        render = base64.b64encode((HERE / 'computer.png').read_bytes()).decode('ascii')
+        s += (f'<image x="484" y="54" width="466" height="356" '
+              f'href="data:image/png;base64,{render}"/>')
     s += rule(0, h - 1, w, h - 1, '#40594b')
-    write('hero-mobile.svg' if mobile else 'hero.svg', frame(w, h,
-          'Ashton Long. Full-stack and AI developer. Fourth-year Computer Science co-op student at the University of Guelph. Open to software developer co-op roles.', s, True))
+    svg = frame(w, h,
+          'Ashton Long. Fourth-year Computer Science co-op student at the University of Guelph. '
+          + ('A graphite workstation with a mint pixel display.' if not mobile else ''), s, True)
+    write('hero-mobile.svg' if mobile else 'hero.svg', svg)
+    if not mobile:
+        (HERE / 'hero.png').write_bytes(resvg_py.svg_to_bytes(svg_string=svg, width=1920))
+        print('wrote hero.png')
 
 
 PROJECTS = [

@@ -3,7 +3,7 @@
 <a href="https://ashtonlong.github.io/">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/hero-mobile.svg" />
-    <img src="assets/hero.svg" width="100%" alt="Ashton Long. Full-stack and AI developer. Fourth-year Computer Science co-op student at the University of Guelph. Open to software developer co-op roles." />
+    <img src="assets/hero.png" width="100%" alt="Ashton Long. Fourth-year Computer Science co-op student at the University of Guelph. Graphite workstation with a mint pixel display." />
   </picture>
 </a>
 
