@@ -1,40 +1,38 @@
 # Profile graphics
 
-The visual reference is [Ashton's portfolio](https://ashtonlong.github.io/), as viewed in September 2026.
+Every graphic is an animated electron micrograph: grayscale brain tissue, colored segments, and a black data bar like a microscope's.
 
 ## Design
 
-- Black `#000000`, white `#ffffff`, and the portfolio's mint `#b9e5cc`.
-- Body gray `#d2d2d2`, secondary gray `#a9a9a9`, and rules `#2e2e2e`.
-- Square pixel lettering, a dotted field, fine vertical lines, and numbered labels.
-- A custom Blender workstation: graphite enclosure, individual keycaps, mint pixel display, and soft studio lighting.
-- Three project diagrams: flashcards, survey waypoints, and neural connectivity.
-- Native Markdown holds the biography, project descriptions, toolkit, and contact links. GitHub controls its fonts and page background.
+- Tissue is built vector-first. A jittered hexagonal Voronoi tiling is warped by smooth noise, rounded, and inset to leave membranes, with patches of fine axon bundles. The grayscale texture (membranes, vesicles, mitochondria, nuclei, grain) is rasterized from those outlines and embedded as a JPEG.
+- Colored segments are vector copies of the same cell outlines, so they always sit inside the membranes. Colors follow the FlyWire viewer: pink `#ff5fa8` (Fruit Fly), cyan `#3fd0ff` (AnkiGPT), yellow `#ffd23f` (ScanAir), green `#7be36b` (activity), violet `#b483ff` (background). Each has a lighter glow tint for signals.
+- The data bar is black `#000000`, with white values, gray `#8c8c8c` labels and `#333333` rules.
+- Text is Archivo (SIL Open Font License, in `fonts/`), set with HarfBuzz and converted to vector outlines, since GitHub does not load fonts inside images.
+- Motion is CSS keyframes plus one SMIL path, which run inside `<img>`. Each scene is written as opacity curves over one loop; `Motion` simplifies them and deduplicates identical keyframes, and motions that differ only in timing share one rule with per-cell delays. `prefers-reduced-motion` stops everything on a representative frame.
 
-## Edit and regenerate
+## Graphics
 
-Edit copy in the root README. Edit graphic layouts, labels, and colors in `generate.py`, then run from the repository root:
+- `hero.svg`: three neurites, one per project, are traced in from their roots on load. Afterwards slow signals travel out along every branch, each neuron at its own rhythm, while background cells flicker like calcium transients.
+- `projects/fruitfly.svg`: a resting fruit fly. Ripples of activity start at an eye or the antennae and twitch each leg as they arrive; once a loop the wings lift and shimmer.
+- `projects/ankigpt.svg`: lines on a page are read one at a time, sparks carry them to new flashcards, a near-duplicate slides into its twin, and the deck flips card by card.
+- `projects/scanair.svg`: a mission in three acts. Plan: the scan-area boundary draws itself with corner handles and the route is generated. Fly: the drone marker and its camera footprint follow the lawnmower route, firing a photo frame along every survey line while overlap builds up in the cells below. Reconstruct: Gaussian splats bloom into the captured site, a gable-roofed house, a road, trees and crop rows.
+- `activity.svg` (CI): the contribution calendar as a calcium-imaging recording. Each day is a neuron with a nucleus; a scan line sweeps the year and active days light up as green rings, brighter for busier days, while the weekly total draws itself as a fluorescence trace aligned with the columns.
+
+Each graphic has a `-mobile` layout that the README selects below 600px.
+
+## Regenerate
+
+From the repository root:
 
 ```sh
 python -m pip install -r assets/requirements.txt
 python assets/generate.py
 ```
 
-Generation uses `resvg-py` to rasterize the desktop hero at 1920 × 840. The README uses `hero.png` for reliable GitHub rendering; `hero.svg` is its self-contained source with the Blender render embedded. Commit generated images alongside the script. Generation is deterministic on the same machine and validates SVG XML before writing. Text uses installed system fonts; the pixel wordmark is vector geometry.
+`generate.py` writes the hero and project panels; commit them alongside the script. Output is deterministic.
 
-### Workstation asset
-
-`computer.blend` is the editable Blender 5.2 scene. `build_computer.py` builds the model, materials, lights, and camera; it was executed through Blender MCP. `computer.png` is the transparent render used by the hero generator.
-
-To rebuild through Blender MCP, execute the script with its absolute path supplied as `__file__`, then run `bpy.ops.render.render(write_still=True)`. Alternatively, from the repository root with Blender on your PATH:
+The activity graphic is not committed. `.github/workflows/activity.yml` runs `activity.py` every hour and on every push to `main`. When the drawing has changed it publishes `activity.svg` and `activity-mobile.svg` to the `output` branch, and each scheduled run re-enables the workflow so GitHub does not switch it off after 60 quiet days. To draw it locally:
 
 ```sh
-blender --background --python assets/build_computer.py -- --render
-python assets/generate.py
+GITHUB_TOKEN=$(gh auth token) python assets/activity.py --out dist
 ```
-
-The script replaces only its dedicated `Profile Workstation` scene. The compact phone header keeps the name and education without the desktop illustration.
-
-Each hero and project banner has a phone layout selected by the README's `<picture>` element below 600px. Desktop images remain the fallback. The graphics use system font stacks and vector squares, with no scripts, remote fonts, or motion dependencies. Body content remains selectable and wraps at narrow widths.
-
-The contribution snake is generated independently by `.github/workflows/snake.yml` and retains its light/dark variants.
