@@ -1,0 +1,72 @@
+name: Draw activity micrograph
+
+# Redraws the contribution calendar as a calcium-imaging micrograph and
+# publishes it to the `output` branch, where the README picks it up via
+# raw.githubusercontent URLs.
+on:
+  schedule:
+    - cron: "23 * * * *"     # hourly, off the top of the hour when GitHub delays scheduled jobs
+  workflow_dispatch:           # lets you run it manually from the Actions tab
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write              # push to the output branch
+  actions: write               # keep this schedule enabled
+
+concurrency:
+  group: activity
+  cancel-in-progress: true
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: assets/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r assets/requirements.txt
+
+      - name: Draw activity SVGs
+        run: python assets/activity.py --out dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: ${{ github.repository_owner }}
+
+      # Output is deterministic, so identical files mean nothing new to publish.
+      - name: Compare with published version
+        id: diff
+        run: |
+          changed=true
+          if git fetch --depth=1 origin output 2>/dev/null \
+             && git show origin/output:activity.svg | cmp -s - dist/activity.svg \
+             && git show origin/output:activity-mobile.svg | cmp -s - dist/activity-mobile.svg; then
+            changed=false
+          fi
+          echo "changed=$changed" >> "$GITHUB_OUTPUT"
+          echo "Changed since last publish: $changed"
+
+      - name: Push to output branch
+        if: steps.diff.outputs.changed == 'true'
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # GitHub disables scheduled workflows after 60 days without repository
+      # activity. Re-enabling through the API resets that clock.
+      - name: Keep schedule enabled
+        if: github.event_name == 'schedule'
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/activity.yml/enable"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
